@@ -21,7 +21,8 @@
 # and last chars of the string are the same.
 # Note: python does not have a ++ operator, but += works.
 def match_ends(words):
-  # +++your code here+++
+  length_2_words = [string for string in words if len(string) >=2]
+  matched_ends_list = [s for s in length_2_words if s[0]==s[-1]]
   return
 
 
